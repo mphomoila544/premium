@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'premiumApp/claims.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-nav1">
+            <h2 style = "text-align: center; color: rgb(16, 65, 65);position: relative;top: 30px;">Logo</h2>
+            <div class="srch">
+                <input type="text" placeholder="Search by policy Number">
+            </div>
+
+            <ul class = "links">
+                <li class = "link" style="color:rgb(16, 65, 65)">Review Claims</li>
+                <li class = "link">Reviewed Claims</li>
+                <li class = "link">Held Claims</li>
+                <li class = "link">Principal Members</li>
+                <li class = "link">payed Claims</li>
+                <li class = "link">Approve Claims</li>
+                <li class = "link">Upload Proof of Payments</li>
+            </ul>
+            <div class="box-container">
+                <div class="report-box">
+                    <p>Download Report</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <div class="nav-bar">
+                <ul>
+                    <li class = "toggler">close side nav</li>
+                    <li>Home</li>
+                    <li>filter</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+            <table cellspacing = 0>
+                <tr class = heading>
+                    <th>Scheme name</th>
+                    <th >Insurer's name</th>
+                    <th >Policy Number</th>
+                    <th>consultant name</th>
+                    <th>Scheme Status</th>
+                    <th>Gross Premium</th>
+                    <th>Policy Status</th>
+                    <th>invoice amount</th>
+                    <th>srs risk premium</th>
+                    <th>Edit</th>
+                </tr>
+                {% for row in data %}
+                <tr>
+                    <td class  = "first">{{row.policy_number.scheme_name}}</td>
+                    <td>{{row.policy_number.insurer_name}}</td>
+                    <td >{{row.policy_number.policy_number}}</td>
+                    <td>{{row.policy_number.consultant_name}}</td>
+                    <td>{{row.policy_number.scheme_status}}</td>
+                    <td>{{row.policy_number.gross_premium}}</td>
+                    <td>{{row.policy_number.policy_status}}</td>
+                    <td>{{row.invoice_amount}}</td>
+                    <td class = "rr">{{row.srs_risk_premium}}</td>
+                    <td class = "last">change status</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+            
+    </div>
+</body>
+</html>

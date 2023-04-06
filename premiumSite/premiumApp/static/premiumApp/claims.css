@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background-color:  #F8F8F8;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color:  #F8F8F8;
+}
+.side-nav1{
+    height: 100vh;
+    width: 20%;
+    background-color: white;
+}
+.box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.report-box{
+    align-items: center;
+    display: flex;
+    cursor:pointer;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top:200px;
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    background-color:rgb(16, 65, 65) ;
+    color:white;
+}
+.links{
+    position: relative;
+    top: 140px;
+    line-height: 3;
+    list-style-type:none ;
+    cursor: pointer;
+
+}
+.rr{
+    color: red;
+}
+.rr1, .rr2{
+    color:rgb(16, 65, 65)
+}
+.link{
+    text-align: center;
+}
+.link:hover{
+    color:rgb(16, 65, 65);
+}
+table{
+    position: relative;
+    top: 70px;
+    width: 90%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+
+}
+.nav-bar{
+    position: relative;
+    width: 105%;
+    height: 50px;
+    background-color: rgb(16, 65, 65);
+    color: white;
+    
+}
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    list-style-type:none ;
+}
+.nav-bar ul li{
+    cursor:pointer;
+}
+.srch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    padding: 12px;
+    border-color: rgb(16, 65, 65);
+    border-radius: 2px;
+    height: 40px;
+}
+td{
+    border:0px;
+    width: 180px;
+    height: 50px;
+    padding: 5px;
+    padding-top:10px;
+}
+td:hover{
+    color: white;
+    background-color: rgb(16, 65, 65);
+    cursor: pointer;
+}
+tr{
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    box-shadow:0 4px 6px rgb(0 0 0 / 8%), 0 7px 14px rgb(0 0 0 / 5%);
+    border-radius: 4px;
+    margin-top: 50px;
+    padding: 10px;
+}
+.heading{
+    background-color: rgb(196, 196, 196);
+    color: white;
+}
+.first{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.last{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+
+ th {
+} 
+
+.info-hd{
+    width: 90%;
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tt{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none ;
+    justify-content: space-around;
+    width: 300px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+.search input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: 0px;
+    background-color: rgb(196, 196, 196);
+}
